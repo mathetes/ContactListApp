@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import Contacts from './components/Contacts';
+import Header from './components/layout/Header';
+import AddContact from './components/contacts/AddContact';
+import Contacts from './components/contacts/Contacts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Provider } from './context';
@@ -10,9 +11,10 @@ class App extends Component {
     return (
       <Provider>
         <div className="App">
-          <Header />
+          <Header />          
           <div className="container">
-          <Contacts />
+            <AddContact />
+            <Contacts />
           </div>
         </div>
       </Provider>
